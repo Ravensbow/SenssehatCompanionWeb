@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- HTML file head: web page metadata -->
+	<head>
+		<title>HTML/JavaScript examples</title>
+		<!-- Chart.js library -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		<script type="text/javascript" src="zad4.js"></script>
+	</head>
+
+	<!-- HTML file body: web page content -->
+	<body>
+		<h1>Zadanie czwarte</h1>
+		<!-- Chart.js requires use of styles to set size! -->
+		<div style="height:10cm; width:15cm">
+			<canvas id="chart"></canvas>
+		</div>
+		<br>
+		<div>
+			<label >Amplituda:</label>
+			<input type="number" id="amplituda" name="amplituda">
+			<br>
+			<br>
+			<label >Faza:</label>
+			<input type="number" id="faza" name="faza">
+			<br>
+			<br>
+			<label >Okres sygnalu:</label>
+			<input type="number" id="okres_sygnalu" name="okres_sygnalu">
+			<br>
+			<br>
+			<label >Okres probkowania:</label>
+			<input type="number" id="okres_probkowania" name="okres_probkowania">
+			<br>
+			<br>
+			<button id="button" onclick="OnClick()" >Zapisz</button>
+		</div>
+	</body>
+
+</html>
