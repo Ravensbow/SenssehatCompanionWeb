@@ -2,7 +2,7 @@ var actualState=null;
 var timer;
 
 var boxDown = $("#jb-bottom");
-var boxUp = $("#jb-up");
+var boxUp = $("#jb-top");
 var boxLeft = $("#jb-left");
 var boxRight = $("#jb-right");
 var boxCenter = $("#jb-center");
