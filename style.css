@@ -591,3 +591,19 @@ footer{
   width:100%; 
   height:100px; 
 }
+.joybutton{
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	margin-bottom: 6px;
+	display: inherit;
+}
+.joybutton-pressed{
+	background-color: darkgray;
+}
+.joybutton-clicked{
+	background-color: grey;
+}
+.joybutton-released{
+	background-color: whitesmoke;
+}

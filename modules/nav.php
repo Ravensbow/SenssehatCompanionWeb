@@ -6,6 +6,9 @@ $categorys= array(
 ),
     array(
     "id"=>"led","name"=>"Panel LED"
+),
+array(
+"id"=>"joystick","name"=>"Joystick"
 ));
 ?>
 <nav style="">

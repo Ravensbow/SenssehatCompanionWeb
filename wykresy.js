@@ -84,6 +84,7 @@ function removeOldPressData(num){
 
 /**
 * @brief Start request timer
+
 */
 function startTimer(){
     let sampleTimeMsec = ($("#sampleTime").val()!="")?$("#sampleTime").val(): 500;
@@ -104,7 +105,7 @@ function ajaxJSON() {
     $.get("api/measure.php",function(data)
 		{
             var obj = JSON.parse(data);
-            addData(+obj.temperature, +obj.humidity, +obj.pressure);
+            addData(+obj[0].Value, +obj[2].Value, +obj[1].Value);
 		}
 	)
 	.fail(function() {
