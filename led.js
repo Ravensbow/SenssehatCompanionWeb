@@ -27,7 +27,7 @@ $(document).ready(function () {
         $(".btnLED").each(function() {
             $(this).removeClass("btnLED_choosen"); 
         });
-        sendLeds(arr);
+        sendLeds(JSON.stringify(arr));
 
     });
     
@@ -50,7 +50,7 @@ function LoadLeds() {
 
 function sendLeds(arr)
 {
-    $.post("api/led.php", { leds: arr }, function (data) {
+    $.post("api/led.php", { leds: arr.toString() }, function (data) {
         if (data.success == false) {
             alert("error sending data");
         }
